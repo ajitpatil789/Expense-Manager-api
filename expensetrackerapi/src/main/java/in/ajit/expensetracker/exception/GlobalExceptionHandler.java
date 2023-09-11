@@ -59,7 +59,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 	
 	// customize hibernate validation annotation response. 
-	@Override
+	
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatus status, WebRequest request) {
 		Map<String, Object> body = new HashMap<String,Object>();

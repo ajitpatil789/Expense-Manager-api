@@ -3,8 +3,6 @@ package in.ajit.expensetracker.controller;
 import java.sql.Date;
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -20,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import in.ajit.expensetracker.entity.Expense;
 import in.ajit.expensetracker.service.ExpenseService;
+import jakarta.validation.Valid;
 
 @RestController
 public class ExpenseController {
